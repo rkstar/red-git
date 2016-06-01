@@ -1,0 +1,11 @@
+p {
+	font-family: Helvetica, Arial, sans-serif;
+	font-style: normal;
+  font-size: 1em;
+	line-height: 1.25em;
+	margin-bottom: 15px;
+}
+
+.author {
+  color: red;
+}

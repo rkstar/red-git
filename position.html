@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+    .absolute {
+      position: absolute;
+      top: 19px;
+      left: 50px;
+      width: 250px;
+      height: 40px;
+      background-color: #ff9898;
+    }
+    .relative {
+      position: relative;
+      top: 59px;
+      left: 200px;
+      width: 50%;
+      height: 300px;
+      background-color: rgba(0,189,0,.6);
+      color: white;
+      border: 1px solid blue;
+    }
+
+    .relative.no-position {
+      top: 0;
+      left: 0;
+    }
+
+    .fixed {
+      position: fixed;
+      bottom: 40px;
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: white;
+      z-index: 10;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="absolute">
+      yo. i'm on top.
+    </div>
+    <div class="relative">
+      hi! i'm your cousin. :)
+    </div>
+    <div class="relative no-position">
+      <div class="absolute">
+        i am absolutely your relative.
+      </div>
+    </div>
+    <div class="fixed">
+      i am not broken.
+    </div>
+  </body>
+</html>
